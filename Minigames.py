@@ -34,9 +34,17 @@ class Minigames(AliceSkill):
 	def __init__(self):
 		self._INTENTS = [
 			(self._INTENT_PLAY_GAME, self.playGameIntent),
-			(self._INTENT_ANSWER_MINI_GAME, self.playGameIntent),
-			(self._INTENT_ANSWER_YES_OR_NO, self.answerAnotherGame)
+			self._INTENT_ANSWER_YES_OR_NO,
+			self._INTENT_ANSWER_MINI_GAME
 		]
+
+		self._INTENT_ANSWER_YES_OR_NO.dialogMapping = {
+			MiniGame.MiniGame.ANSWERING_PLAY_AGAIN_STATE, self.answerAnotherGame
+		}
+
+		self._INTENT_ANSWER_MINI_GAME.dialogMapping = {
+			'answeringWhatGame', self.playGameIntent
+		}
 
 		self._minigames = dict()
 		self._minigame: MiniGame = None
@@ -85,7 +93,8 @@ class Minigames(AliceSkill):
 				self.continueDialog(
 					sessionId=session.sessionId,
 					intentFilter=[self._INTENT_ANSWER_MINI_GAME],
-					text=self.TalkManager.randomTalk('whichGame')
+					text=self.TalkManager.randomTalk('whichGame'),
+					currentDialogState='answeringWhatGame'
 				)
 			else:
 				self._minigame.start()
@@ -100,7 +109,8 @@ class Minigames(AliceSkill):
 				self.continueDialog(
 					sessionId=sessionId,
 					intentFilter=[self._INTENT_ANSWER_MINI_GAME],
-					text=self.TalkManager.randomTalk('whichGame')
+					text=self.TalkManager.randomTalk('whichGame'),
+					currentDialogState='answeringWhatGame'
 				)
 
 			elif session.slotValue('WhichGame') not in self._SUPPORTED_GAMES:
@@ -108,7 +118,7 @@ class Minigames(AliceSkill):
 					sessionId=sessionId,
 					intentFilter=[self._INTENT_ANSWER_MINI_GAME, self._INTENT_ANSWER_YES_OR_NO],
 					text=self.TalkManager.randomTalk('unknownGame'),
-					currentDialogState='answeringPlayAnotherGamer'
+					currentDialogState='answeringWhatGame'
 				)
 
 			else:
