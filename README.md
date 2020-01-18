@@ -1,5 +1,7 @@
 # Minigames
 
+[![Continous Integration](https://gitlab.com/project-alice-assistant/skills/skill_Minigames/badges/master/pipeline.svg)](https://gitlab.com/project-alice-assistant/skills/skill_Minigames/pipelines/latest)
+
 ### Download
 
 ##### > WGET method
