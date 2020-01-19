@@ -39,7 +39,7 @@ class Minigames(AliceSkill):
 		]
 
 		self._INTENT_ANSWER_YES_OR_NO.dialogMapping = {
-			MiniGame.MiniGame.ANSWERING_PLAY_AGAIN_STATE, self.answerAnotherGame
+			MiniGame.MiniGame.ANSWERING_PLAY_AGAIN_STATE: self.answerAnotherGame
 		}
 
 		self._INTENT_ANSWER_MINI_GAME.dialogMapping = {
