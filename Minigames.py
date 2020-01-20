@@ -43,7 +43,7 @@ class Minigames(AliceSkill):
 		}
 
 		self._INTENT_ANSWER_MINI_GAME.dialogMapping = {
-			'answeringWhatGame', self.playGameIntent
+			'answeringWhatGame': self.playGameIntent
 		}
 
 		self._minigames = dict()
