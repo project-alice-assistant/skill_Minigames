@@ -122,22 +122,22 @@
 			"description": "L'utilisateur demande à Jouer à un mini-jeu",
 			"enabledByDefault": true,
 			"utterances": [
-				"{flip a coin:=>WhichGame}",
-				"s'il te plaît {flip a coin:=>WhichGame}",
-				"{flip a coin:=>WhichGame} s'il te plaît",
+				"{pile ou face:=>WhichGame}",
+				"s'il te plaît {pile ou face:=>WhichGame}",
+				"{pile ou face:=>WhichGame} s'il te plaît",
 				"faire un jeu",
 				"faisons un jeu",
-				"jouer à {rock paper scissors:=>WhichGame}",
+				"jouer à {pierre papier ciseaux:=>WhichGame}",
 				"je veux jouer avec toi",
 				"je voudrais jouer avec toi",
 				"jouons ensemble",
 				"joue avec moi",
 				"joue avec moi s'il te plaît",
-				"peux-tu s'il te plaît {flip a coin:=>WhichGame}",
-				"peux-tu {flip a coin:=>WhichGame}",
-				"peux-tu {roll a dice:=>WhichGame}",
-				"jouons à {scissors rock paper:=>WhichGame}",
-				"jouer à {scissors rock paper:=>WhichGame}"
+				"peux-tu s'il te plaît {pile ou face:=>WhichGame}",
+				"peux-tu {pile ou face:=>WhichGame}",
+				"peux-tu {lancer un dé:=>WhichGame}",
+				"jouons à {pierre papier ciseaux:=>WhichGame}",
+				"jouer à {pierre papier ciseaux:=>WhichGame}"
 			],
 			"slots": [
 				{
@@ -154,7 +154,7 @@
 			"description": "L'utilisateur répond avec le nom du mini-jeu",
 			"enabledByDefault": false,
 			"utterances": [
-				"{flip a coin:=>WhichGame}"
+				"{pile ou face:=>WhichGame}"
 			],
 			"slots": [
 				{
@@ -171,10 +171,10 @@
 			"description": "L'utilisateur répond pile ou face",
 			"enabledByDefault": false,
 			"utterances": [
-				"{Heads:=>HeadsOrTails}",
-				"je choisis {tail:=>HeadsOrTails}",
-				"je prends {tail:=>HeadsOrTails}",
-				"{ship:=>HeadsOrTails} s'il te plaît"
+				"{pile:=>HeadsOrTails}",
+				"je choisis {face:=>HeadsOrTails}",
+				"je prends {face:=>HeadsOrTails}",
+				"{pile:=>HeadsOrTails} s'il te plaît"
 			],
 			"slots": [
 				{
@@ -191,10 +191,10 @@
 			"description": "L'utilisateur répond pierre, papier ou ciseaux",
 			"enabledByDefault": false,
 			"utterances": [
-				"{rock:=>RockPaperOrScissors}",
-				"je choisis {paper:=>RockPaperOrScissors}",
-				"je prends {scissors:=>RockPaperOrScissors}",
-				"{stone:=>RockPaperOrScissors} s'il te plaît"
+				"{pierre:=>RockPaperOrScissors}",
+				"je choisis {papier:=>RockPaperOrScissors}",
+				"je prends {ciseaux:=>RockPaperOrScissors}",
+				"{pierre:=>RockPaperOrScissors} s'il te plaît"
 			],
 			"slots": [
 				{
