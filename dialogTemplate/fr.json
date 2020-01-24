@@ -50,14 +50,14 @@
 				{
 					"value": "GuessTheNumber",
 					"synonyms": [
-						"deviner le chiffre",
-						"devine le chiffre",
-						"deviner un chiffre",
-						"devine un chiffre",
-						"deviner le numéro",
-						"devine le numéro",
-						"deviner un numéro",
-						"devine un numéro"
+						"deviner le nombre mystère",
+						"devine le nombre mystère",
+						"deviner un nombre mystère",
+						"devine un nombre mystère",
+						"deviner le nombre",
+						"devine le nombre",
+						"deviner un nombre",
+						"devine un nombre"
 					]
 				}
 			]
