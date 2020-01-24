@@ -69,7 +69,7 @@
 		{
 			"name": "HeadsOrTails",
 			"matchingStrictness": null,
-			"automaticallyExtensible": true,
+			"automaticallyExtensible": false,
 			"useSynonyms": true,
 			"values": [
 				{
@@ -89,7 +89,7 @@
 		{
 			"name": "RockPaperOrScissors",
 			"matchingStrictness": null,
-			"automaticallyExtensible": true,
+			"automaticallyExtensible": false,
 			"useSynonyms": true,
 			"values": [
 				{
@@ -127,7 +127,6 @@
 				"{pile ou face:=>WhichGame} s'il te plaît",
 				"faire un jeu",
 				"faisons un jeu",
-				"jouer à {pierre papier ciseaux:=>WhichGame}",
 				"je veux jouer avec toi",
 				"je voudrais jouer avec toi",
 				"jouons ensemble",

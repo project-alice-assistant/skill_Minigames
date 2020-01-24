@@ -52,7 +52,7 @@
 		{
 			"name": "HeadsOrTails",
 			"matchingStrictness": null,
-			"automaticallyExtensible": true,
+			"automaticallyExtensible": false,
 			"useSynonyms": true,
 			"values": [
 				{
@@ -72,7 +72,7 @@
 		{
 			"name": "RockPaperOrScissors",
 			"matchingStrictness": null,
-			"automaticallyExtensible": true,
+			"automaticallyExtensible": false,
 			"useSynonyms": true,
 			"values": [
 				{
