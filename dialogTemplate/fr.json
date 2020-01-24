@@ -41,6 +41,8 @@
 					"synonyms": [
 						"pierre papier ciseaux",
 						"pierre feuille ciseaux",
+						"caillou papier ciseaux",
+						"caillou feuille ciseaux",
 						"chifoumi",
 						"chifumi",
 						"shifoumi",
@@ -93,7 +95,8 @@
 				{
 					"value": "rock",
 					"synonyms": [
-						"pierre"
+						"pierre",
+						"caillou"
 					]
 				},
 				{
