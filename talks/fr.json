@@ -1,0 +1,84 @@
+{
+	"unknownGame": [
+		"Désolé mais je ne connais pas ce jeu. Voudriez-vous en choisir un autre ?",
+		"Je ne connais pas ce jeu, désolé. Choisissez-en un autre s'il vous plaît.",
+		"Je suis navré de ne pas connaître ce jeu... acceptez-vous d'en choisir un autre ?"
+	],
+	"whichGame": [
+		"Jouons maintenant ! Quel mini jeu choisissez vous ?",
+		"Bien sûr ! Quel mini jeu vous ferait plaisir ?",
+		"C'est parti ! Quel mini jeu souhaitez-vous ?"
+	],
+	"endPlaying": [
+		"Ok, je reste à votre disposition pour un nouveau jeu !",
+		"Ok, j'espère que nous rejouerons bientôt !",
+		"Ok, dites-moi lorsque vous souhaiterez rejouer !"
+	],
+	"playAgain": [
+		"Souhaitez-vous rejouer ?",
+		"Une autre partie ?",
+		"Si nous en faisions un autre ?"
+	],
+	"flipACoinStart": [
+		"Etes-vous prêts ? Choisissez vous pile ou face ?",
+		"Ok, je lance lance la pièce ! Pile ou face ?",
+		"No problemo ! Pile ou face ?"
+	],
+	"flipACoinUserWins": [
+		"<say-as interpret-as=\"interjection\">{}</say-as>! Gagné ! <break time=\"500ms\"/> Une autre ?",
+		"<say-as interpret-as=\"interjection\">{}</say-as>! Vous gagnez ! <break time=\"500ms\"/> Puis-je relancer ?",
+		"Ok, j'ai perdu... <say-as interpret-as=\"interjection\">{}</say-as>...  <break time=\"500ms\"/> Vous retentez votre chance ?"
+	],
+	"flipACoinUserLooses": [
+		"<say-as interpret-as=\"interjection\">{}</say-as>! Vous avez perdu ! <break time=\"500ms\"/> Oserez-vous rejouer ?",
+		"<say-as interpret-as=\"interjection\">{}</say-as>! Perdu ! <break time=\"500ms\"/> Voulez-vous réessayer ?",
+		"<say-as interpret-as=\"interjection\">{}</say-as>! Et le gagnant est... <say-as interpret-as=\"interjection\">moi</say-as>! <break time=\"500ms\"/> Retentez-vous votre chance ?"
+	],
+	"rollADiceResult": [
+		"<say-as interpret-as=\"interjection\">{}</say-as>!",
+		"et c'est un... ,<say-as interpret-as=\"interjection\">{}</say-as>!",
+		"voici un... ,<say-as interpret-as=\"interjection\">{}</say-as>!"
+	],
+	"rockPaperScissorsStart": [
+		"<say-as interpret-as=\"interjection\">pierre</say-as> <say-as interpret-as=\"interjection\">papier</say-as> <say-as interpret-as=\"interjection\">ciseaux</say-as>! Qu'avez vous ?",
+		"<say-as interpret-as=\"interjection\">pierre</say-as> <say-as interpret-as=\"interjection\">papier</say-as> <say-as interpret-as=\"interjection\">ciseaux</say-as>! Et vous ?"
+	],
+	"rockPaperScissorsLooses": [
+		"Et j'ai <say-as interpret-as=\"interjection\">{}</say-as>! Vous avez perdu ! <break time=\"500ms\"/> Oserez-vous rejouer ?",
+		"J'avais <say-as interpret-as=\"interjection\">{}</say-as>! perdu ! <break time=\"500ms\"/> Voulez-vous réessayer ?",
+		"Cool ! j'avais <say-as interpret-as=\"interjection\">{}</say-as>! J'ai gagné ! <break time=\"500ms\"/> Tentez-vous votre chance à nouveau ?"
+	],
+	"rockPaperScissorsWins": [
+		"J'ai <say-as interpret-as=\"interjection\">{}</say-as>... Vous gagnez... <break time=\"500ms\"/> Si nous en faisions une autre ?",
+		"<say-as interpret-as=\"interjection\">{}</say-as>... Vous m'avez eu... <break time=\"500ms\"/> Voulez-vous réessayer ?",
+		"Oh non ! J'avais <say-as interpret-as=\"interjection\">{}</say-as>. Je perds ! <break time=\"500ms\"/> Pouvons-vous rejouer ?"
+	],
+	"rockPaperScissorsTie": [
+		"<say-as interpret-as=\"interjection\">{}</say-as>, pareil ! <break time=\"500ms\"/> Oserez-vous rejouer ?",
+		"J'avais <say-as interpret-as=\"interjection\">{}</say-as> également ! <break time=\"500ms\"/> Souhaitez-vous réessayer ?",
+		"J'avais choisi <say-as interpret-as=\"interjection\">{}</say-as> moi aussi ! Match nul ! <break time=\"500ms\"/> Retentez-vous votre chance ?"
+	],
+	"guessTheNumberStart": [
+		"C'est parti ! Je pense à un nombre compris entre 1 et 10000, essayez de le trouver aussi vite que possible !",
+		"Ok, jouons ! Essayez de deviner le nombre auquel je pense. Il est compris entre 1 et 10000",
+		"Ok, essayer de devinez le nombre mystère aussi vite que possible ! Entre 1 et 10000"
+	],
+	"guessTheNumberMore": [
+		"Plus !"
+	],
+	"guessTheNumberLess": [
+		"Moins !"
+	],
+	"guessTheNumberCorrect": [
+		"{}? Avez-vous dit {}? Vous avez trouvé, félicitation !",
+		"Un instant ! avez-vous dit {}? Impressionnant, vous avez trouvé !"
+	],
+	"guessTheNumberNewHighscore": [
+		"{}! C'est un nouveau record ! je vous félicite !",
+		"C'est un nouveau record ! Vous avez trouvé en {}, toutes mes félicitations !"
+	],
+	"guessTheNumberScore": [
+		"Vous avez trouvé en {}!",
+		"Vous avez fini le jeu en {}, bravo !"
+	]
+}

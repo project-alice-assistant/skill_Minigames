@@ -1,0 +1,210 @@
+{
+	"skill": "Minigames",
+	"icon": "time",
+	"description": "Jouer à différents mini-jeux avec alice",
+	"slotTypes": [
+		{
+			"name": "MiniGame",
+			"matchingStrictness": null,
+			"automaticallyExtensible": false,
+			"useSynonyms": true,
+			"values": [
+				{
+					"value": "FlipACoin",
+					"synonyms": [
+						"pile ou face",
+						"tirer à pile ou face",
+						"tire à pile ou face",
+						"lancer une pièce",
+						"lance une pièce"
+					]
+				},
+				{
+					"value": "RollADice",
+					"synonyms": [
+						"lancer un dé",
+						"lance un dé",
+						"lancer les dés",
+						"lance les dés",
+						"lancer des dés",
+						"lance des dés",
+						"jeter un dé",
+						"jette un dé",
+						"jeter les dés",
+						"jette les dés",
+						"jeter des dés",
+						"jette des dés"
+					]
+				},
+				{
+					"value": "RockPaperScissors",
+					"synonyms": [
+						"pierre papier ciseaux",
+						"pierre feuille ciseaux",
+						"caillou papier ciseaux",
+						"caillou feuille ciseaux",
+						"chifoumi",
+						"chifumi",
+						"shifoumi",
+						"shifumi"
+					]
+				},
+				{
+					"value": "GuessTheNumber",
+					"synonyms": [
+						"nombre mystère",
+						"le nombre mystère",
+						"deviner le nombre mystère",
+						"devine le nombre mystère",
+						"deviner un nombre mystère",
+						"devine un nombre mystère",
+						"deviner le nombre",
+						"devine le nombre",
+						"deviner un nombre",
+						"devine un nombre"
+					]
+				}
+			]
+		},
+		{
+			"name": "HeadsOrTails",
+			"matchingStrictness": null,
+			"automaticallyExtensible": true,
+			"useSynonyms": true,
+			"values": [
+				{
+					"value": "heads",
+					"synonyms": [
+						"face"
+					]
+				},
+				{
+					"value": "tails",
+					"synonyms": [
+						"pile"
+					]
+				}
+			]
+		},
+		{
+			"name": "RockPaperOrScissors",
+			"matchingStrictness": null,
+			"automaticallyExtensible": true,
+			"useSynonyms": true,
+			"values": [
+				{
+					"value": "rock",
+					"synonyms": [
+						"pierre",
+						"caillou"
+					]
+				},
+				{
+					"value": "paper",
+					"synonyms": [
+						"papier",
+						"feuille"
+					]
+				},
+				{
+					"value": "scissors",
+					"synonyms": [
+						"ciseaux",
+						"ciseau"
+					]
+				}
+			]
+		}
+	],
+	"intents": [
+		{
+			"name": "PlayGame",
+			"description": "L'utilisateur demande à Jouer à un mini-jeu",
+			"enabledByDefault": true,
+			"utterances": [
+				"{pile ou face:=>WhichGame}",
+				"s'il te plaît {pile ou face:=>WhichGame}",
+				"{pile ou face:=>WhichGame} s'il te plaît",
+				"faire un jeu",
+				"faisons un jeu",
+				"jouer à {pierre papier ciseaux:=>WhichGame}",
+				"je veux jouer avec toi",
+				"je voudrais jouer avec toi",
+				"jouons ensemble",
+				"joue avec moi",
+				"joue avec moi s'il te plaît",
+				"peux-tu s'il te plaît {pile ou face:=>WhichGame}",
+				"peux-tu {pile ou face:=>WhichGame}",
+				"peux-tu {lancer un dé:=>WhichGame}",
+				"jouons à {pierre papier ciseaux:=>WhichGame}",
+				"jouer à {pierre papier ciseaux:=>WhichGame}"
+			],
+			"slots": [
+				{
+					"name": "WhichGame",
+					"description": "Le mini-jeu commence",
+					"required": false,
+					"type": "MiniGame",
+					"missingQuestion": ""
+				}
+			]
+		},
+		{
+			"name": "AnswerMiniGame",
+			"description": "L'utilisateur répond avec le nom du mini-jeu",
+			"enabledByDefault": false,
+			"utterances": [
+				"{pile ou face:=>WhichGame}"
+			],
+			"slots": [
+				{
+					"name": "WhichGame",
+					"description": null,
+					"required": false,
+					"type": "MiniGame",
+					"missingQuestion": ""
+				}
+			]
+		},
+		{
+			"name": "AnswerHeadsOrTail",
+			"description": "L'utilisateur répond pile ou face",
+			"enabledByDefault": false,
+			"utterances": [
+				"{pile:=>HeadsOrTails}",
+				"je choisis {face:=>HeadsOrTails}",
+				"je prends {face:=>HeadsOrTails}",
+				"{pile:=>HeadsOrTails} s'il te plaît"
+			],
+			"slots": [
+				{
+					"name": "HeadsOrTails",
+					"description": null,
+					"required": false,
+					"type": "HeadsOrTails",
+					"missingQuestion": ""
+				}
+			]
+		},
+		{
+			"name": "AnswerRockPaperOrScissors",
+			"description": "L'utilisateur répond pierre, papier ou ciseaux",
+			"enabledByDefault": false,
+			"utterances": [
+				"{pierre:=>RockPaperOrScissors}",
+				"je choisis {papier:=>RockPaperOrScissors}",
+				"je prends {ciseaux:=>RockPaperOrScissors}",
+				"{pierre:=>RockPaperOrScissors} s'il te plaît"
+			],
+			"slots": [
+				{
+					"name": "RockPaperOrScissors",
+					"description": null,
+					"required": false,
+					"type": "RockPaperOrScissors",
+					"missingQuestion": ""
+				}
+			]
+		}
+	]
+}
