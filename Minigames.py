@@ -3,7 +3,7 @@ import importlib
 from core.base.model.AliceSkill import AliceSkill
 from core.base.model.Intent import Intent
 from core.dialog.model.DialogSession import DialogSession
-from .model import MiniGame
+from .model.MiniGame import MiniGame
 
 
 class Minigames(AliceSkill):
@@ -39,7 +39,7 @@ class Minigames(AliceSkill):
 		]
 
 		self._INTENT_ANSWER_YES_OR_NO.dialogMapping = {
-			MiniGame.MiniGame.ANSWERING_PLAY_AGAIN_STATE: self.answerAnotherGame
+			'answeringPlayAgain': self.answerAnotherGame
 		}
 
 		self._INTENT_ANSWER_MINI_GAME.dialogMapping = {
@@ -47,6 +47,7 @@ class Minigames(AliceSkill):
 		}
 
 		self._minigames = dict()
+		# noinspection PyTypeChecker
 		self._minigame: MiniGame = None
 
 		for game in self._SUPPORTED_GAMES:
@@ -75,7 +76,7 @@ class Minigames(AliceSkill):
 
 
 	def minigameIntent(self, session: DialogSession) -> bool:
-		if session.currentState != MiniGame.MiniGame.PLAYING_MINIGAME_STATE:
+		if session.currentState != MiniGame.PLAYING_MINIGAME_STATE:
 			return False
 
 		self._minigame.onMessage(session)
@@ -89,7 +90,7 @@ class Minigames(AliceSkill):
 				text=self.randomTalk('endPlaying')
 			)
 		else:
-			if session.currentState != MiniGame.MiniGame.ANSWERING_PLAY_AGAIN_STATE:
+			if session.currentState != MiniGame.ANSWERING_PLAY_AGAIN_STATE:
 				self.continueDialog(
 					sessionId=session.sessionId,
 					intentFilter=[self._INTENT_ANSWER_MINI_GAME],

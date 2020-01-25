@@ -1,10 +1,10 @@
 {
 	"name": "Minigames",
-	"version": "1.0.13",
+	"version": "1.0.14",
 	"author": "Psychokiller1888",
 	"maintainers": ["maxbachmann"],
 	"desc": "Play a collection of many little games with alice",
-	"aliceMinVersion": "1.0.0-a4",
+	"aliceMinVersion": "1.0.0-a5",
 	"pipRequirements": [],
 	"systemRequirements": [],
 	"conditions": {
