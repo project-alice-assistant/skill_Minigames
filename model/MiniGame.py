@@ -11,8 +11,8 @@ class MiniGame(ProjectAliceObject):
 	_INTENT_PLAY_GAME = 'PlayGame'
 	_INTENT_ANSWER_YES_OR_NO = 'AnswerYesOrNo'
 
-	PLAYING_MINIGAME_STATE = 'playingMiniGame')
-	ANSWERING_PLAY_AGAIN_STATE = 'answeringPlayAgain')
+	PLAYING_MINIGAME_STATE = 'playingMiniGame'
+	ANSWERING_PLAY_AGAIN_STATE = 'answeringPlayAgain'
 
 	def __init__(self):
 		super().__init__(logDepth=4)
