@@ -4,6 +4,7 @@ from pathlib import Path
 from core.base.SuperManager import SuperManager
 from core.base.model.ProjectAliceObject import ProjectAliceObject
 from core.dialog.model.DialogState import DialogState
+from core.dialog.model.DialogSession import DialogSession
 
 
 class MiniGame(ProjectAliceObject):
@@ -39,7 +40,7 @@ class MiniGame(ProjectAliceObject):
 		return self._intents
 
 
-	def start(self):
+	def start(self, session: DialogSession):
 		self._started = True
 
 
