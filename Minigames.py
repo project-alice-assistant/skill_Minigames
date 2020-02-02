@@ -39,11 +39,11 @@ class Minigames(AliceSkill):
 		]
 
 		self._INTENT_ANSWER_YES_OR_NO.dialogMapping = {
-			DialogState('answeringPlayAgain'): self.answerAnotherGame
+			'answeringPlayAgain': self.answerAnotherGame
 		}
 
 		self._INTENT_ANSWER_MINI_GAME.dialogMapping = {
-			DialogState('answeringWhatGame'): self.playGameIntent
+			'answeringWhatGame': self.playGameIntent
 		}
 
 		self._minigames = dict()

@@ -3,7 +3,6 @@ from pathlib import Path
 
 from core.base.SuperManager import SuperManager
 from core.base.model.ProjectAliceObject import ProjectAliceObject
-from core.dialog.model.DialogState import DialogState
 from core.dialog.model.DialogSession import DialogSession
 
 
@@ -12,8 +11,8 @@ class MiniGame(ProjectAliceObject):
 	_INTENT_PLAY_GAME = 'PlayGame'
 	_INTENT_ANSWER_YES_OR_NO = 'AnswerYesOrNo'
 
-	PLAYING_MINIGAME_STATE = DialogState('playingMiniGame')
-	ANSWERING_PLAY_AGAIN_STATE = DialogState('answeringPlayAgain')
+	PLAYING_MINIGAME_STATE = 'playingMiniGame')
+	ANSWERING_PLAY_AGAIN_STATE = 'answeringPlayAgain')
 
 	def __init__(self):
 		super().__init__(logDepth=4)
