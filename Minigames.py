@@ -39,11 +39,11 @@ class Minigames(AliceSkill):
 		]
 
 		self._INTENT_ANSWER_YES_OR_NO.dialogMapping = {
-			'answeringPlayAgain': self.answerAnotherGame
+			DialogState('answeringPlayAgain'): self.answerAnotherGame
 		}
 
 		self._INTENT_ANSWER_MINI_GAME.dialogMapping = {
-			'answeringWhatGame': self.playGameIntent
+			DialogState('answeringWhatGame'): self.playGameIntent
 		}
 
 		self._minigames = dict()
@@ -60,7 +60,7 @@ class Minigames(AliceSkill):
 
 				self._INTENTS.extend([(intent, self.minigameIntent) for intent in minigame.intents])
 			except Exception as e:
-				self.logError(f'Something went wrong loading the minigame "{game}": {e}')
+				self.log.error(f'Something went wrong loading the minigame "{game}": {e}')
 
 		super().__init__(self._INTENTS, databaseSchema=self.DATABASE)
 
