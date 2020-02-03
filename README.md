@@ -12,7 +12,7 @@ wget http://skills.projectalice.ch/Minigames -O ~/ProjectAlice/system/skillInsta
 ### Description
 Play a collection of many little games with alice
 
-- Version: 1.0.17
+- Version: 1.0.18
 - Author: Psychokiller1888
 - Maintainers: maxbachmann
 - Alice minimum Version: 1.0.0-a5

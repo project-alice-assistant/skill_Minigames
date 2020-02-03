@@ -60,7 +60,7 @@ class Minigames(AliceSkill):
 
 				self._INTENTS.extend([(intent, self.minigameIntent) for intent in minigame.intents])
 			except Exception as e:
-				self.log.error(f'Something went wrong loading the minigame "{game}": {e}')
+				self.logError(f'Something went wrong loading the minigame "{game}": {e}')
 
 		super().__init__(self._INTENTS, databaseSchema=self.DATABASE)
 
