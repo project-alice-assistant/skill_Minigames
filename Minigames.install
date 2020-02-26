@@ -1,6 +1,7 @@
 {
 	"name": "Minigames",
 	"version": "1.0.18",
+	"icon": "battle-net",
 	"author": "Psychokiller1888",
 	"maintainers": ["maxbachmann"],
 	"desc": "Play a collection of many little games with alice",
