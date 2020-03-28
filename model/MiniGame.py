@@ -15,7 +15,7 @@ class MiniGame(ProjectAliceObject):
 	ANSWERING_PLAY_AGAIN_STATE = 'answeringPlayAgain'
 
 	def __init__(self):
-		super().__init__(logDepth=4)
+		super().__init__()
 		self._started = False
 		self._intents = list()
 
