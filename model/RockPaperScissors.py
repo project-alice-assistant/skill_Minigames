@@ -37,7 +37,7 @@ class RockPaperScissors(MiniGame):
 	def onMessage(self, session: DialogSession):
 		if session.intentName == self._INTENT_ANSWER_ROCK_PAPER_OR_SCISSORS:
 			choices = ['rock', 'paper', 'scissors']
-			me = random.choice(choices)
+			aliceChoice = random.choice(choices)
 
 			self.sound('drum_suspens', session.siteId)
 
@@ -45,10 +45,10 @@ class RockPaperScissors(MiniGame):
 			redQueen.changeRedQueenStat('happiness', 5)
 			player = session.slotValue('RockPaperOrScissors')
 			# tie
-			if player == me:
+			if player == aliceChoice:
 				result = 'rockPaperScissorsTie'
 			# player wins
-			elif choices[choices.index(player) - 1] == me:
+			elif choices[choices.index(player) - 1] == aliceChoice:
 				result = 'rockPaperScissorsWins'
 				redQueen.changeRedQueenStat('frustration', 2)
 			# alice wins
@@ -62,7 +62,7 @@ class RockPaperScissors(MiniGame):
 				text=SuperManager.getInstance().talkManager.randomTalk(
 					talk=result,
 					skill='Minigames'
-				).format(SuperManager.getInstance().languageManager.getTranslations(skill='Minigames', key=me, toLang=SuperManager.getInstance().languageManager.activeLanguage)[0]),
+				).format(SuperManager.getInstance().languageManager.getTranslations(skill='Minigames', key=aliceChoice, toLang=SuperManager.getInstance().languageManager.activeLanguage)[0]),
 				intentFilter=[self._INTENT_ANSWER_YES_OR_NO],
 				previousIntent=self._INTENT_PLAY_GAME,
 				customData={

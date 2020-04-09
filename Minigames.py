@@ -60,14 +60,13 @@ class Minigames(AliceSkill):
 
 				self._INTENTS.extend([(intent, self.minigameIntent) for intent in minigame.intents])
 			except Exception as e:
-				self.logError(f'Something went wrong loading the minigame "{game}": {e}')
+				self.logError(f'Something went wrong loading the minigame **{game}**: {e}')
 
 		super().__init__(self._INTENTS, databaseSchema=self.DATABASE)
 
 
 	def onSessionTimeout(self, session: DialogSession):
-		if self._minigame:
-			self._minigame.started = False
+		self.onUserCancel(session)
 
 
 	def onUserCancel(self, session: DialogSession):
@@ -98,7 +97,7 @@ class Minigames(AliceSkill):
 					currentDialogState='answeringWhatGame'
 				)
 			else:
-				self._minigame.start()
+				self._minigame.start(session)
 
 
 	def playGameIntent(self, session: DialogSession):

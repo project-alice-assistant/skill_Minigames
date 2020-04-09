@@ -20,10 +20,6 @@ class MiniGame(ProjectAliceObject):
 		self._intents = list()
 
 
-	def onMessage(self, session) -> bool:
-		pass
-
-
 	@property
 	def started(self) -> bool:
 		return self._started

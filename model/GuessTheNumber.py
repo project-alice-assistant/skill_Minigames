@@ -55,8 +55,8 @@ class GuessTheNumber(MiniGame):
 		if number == self._number:
 
 			score = round(time.time() - self._start)
-			m, s = divmod(score, 60)
-			scoreFormatted = SuperManager.getInstance().languageManager.getTranslations(skill='Minigames', key='minutesAndSeconds')[0].format(round(m), round(s))
+			minutes, seconds = divmod(score, 60)
+			scoreFormatted = SuperManager.getInstance().languageManager.getTranslations(skill='Minigames', key='minutesAndSeconds')[0].format(round(minutes), round(seconds))
 
 			self.sound('applause', session.siteId)
 
