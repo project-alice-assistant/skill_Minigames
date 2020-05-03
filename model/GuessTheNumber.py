@@ -40,8 +40,7 @@ class GuessTheNumber(MiniGame):
 		SuperManager.getInstance().mqttManager.continueDialog(
 			sessionId=session.sessionId,
 			text=SuperManager.getInstance().talkManager.randomTalk(talk='guessTheNumberStart', skill='Minigames'),
-			intentFilter=[self._INTENT_ANSWER_NUMBER],
-			previousIntent=self._INTENT_PLAY_GAME
+			intentFilter=[self._INTENT_ANSWER_NUMBER]
 		)
 
 
@@ -78,7 +77,6 @@ class GuessTheNumber(MiniGame):
 			SuperManager.getInstance().mqttManager.ask(
 				text=SuperManager.getInstance().talkManager.randomTalk('playAgain', 'Minigames'),
 				intentFilter=[self._INTENT_ANSWER_YES_OR_NO],
-				previousIntent=self._INTENT_PLAY_GAME,
 				customData={
 					'speaker': session.user,
 					'askRetry': True
@@ -93,6 +91,5 @@ class GuessTheNumber(MiniGame):
 		SuperManager.getInstance().mqttManager.continueDialog(
 			sessionId=session.sessionId,
 			text=SuperManager.getInstance().talkManager.randomTalk(textType, 'Minigames'),
-			intentFilter=[self._INTENT_ANSWER_NUMBER],
-			previousIntent=session.intentName
+			intentFilter=[self._INTENT_ANSWER_NUMBER]
 		)

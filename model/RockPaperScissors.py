@@ -29,8 +29,7 @@ class RockPaperScissors(MiniGame):
 		SuperManager.getInstance().mqttManager.continueDialog(
 			sessionId=session.sessionId,
 			text=SuperManager.getInstance().talkManager.randomTalk(talk='rockPaperScissorsStart', skill='Minigames'),
-			intentFilter=[self._INTENT_ANSWER_ROCK_PAPER_OR_SCISSORS],
-			previousIntent=self._INTENT_PLAY_GAME
+			intentFilter=[self._INTENT_ANSWER_ROCK_PAPER_OR_SCISSORS]
 		)
 
 
@@ -64,7 +63,6 @@ class RockPaperScissors(MiniGame):
 					skill='Minigames'
 				).format(SuperManager.getInstance().languageManager.getTranslations(skill='Minigames', key=aliceChoice, toLang=SuperManager.getInstance().languageManager.activeLanguage)[0]),
 				intentFilter=[self._INTENT_ANSWER_YES_OR_NO],
-				previousIntent=self._INTENT_PLAY_GAME,
 				customData={
 					'askRetry': True
 				}
