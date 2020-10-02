@@ -1,22 +1,24 @@
 {
-	"name": "Minigames",
-	"version": "1.0.20",
-	"icon": "fas fa-gamepad",
-	"category": "game",
-	"author": "Psychokiller1888",
-	"maintainers": ["maxbachmann"],
-	"desc": "Play a collection of many little games with Alice",
-	"aliceMinVersion": "1.0.0-a5",
-	"pipRequirements": [],
-	"systemRequirements": [],
-	"conditions": {
-		"lang": [
-			"en",
-			"de",
-			"fr"
-		],
-		"notSkill": [
-		    "maxbachmann/RockPaperScissors"
-		]
-	}
+    "name": "Minigames",
+    "version": "1.0.21",
+    "icon": "fas fa-gamepad",
+    "category": "game",
+    "author": "Psychokiller1888",
+    "maintainers": [
+        "maxbachmann"
+    ],
+    "desc": "Play a collection of many little games with Alice",
+    "aliceMinVersion": "1.0.0-a5",
+    "pipRequirements": [],
+    "systemRequirements": [],
+    "conditions": {
+        "lang": [
+            "en",
+            "de",
+            "fr"
+        ],
+        "notSkill": [
+            "maxbachmann/RockPaperScissors"
+        ]
+    }
 }
