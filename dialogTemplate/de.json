@@ -1,7 +1,5 @@
 {
 	"skill": "Minigames",
-	"icon": "time",
-	"description": "Play a collection of many little games with alice",
 	"slotTypes": [
 		{
 			"name": "MiniGame",
@@ -99,7 +97,6 @@
 	"intents": [
 		{
 			"name": "PlayGame",
-			"description": "User asks to play a minigame",
 			"enabledByDefault": true,
 			"utterances": [
 				"{wirf eine Münze:=>WhichGame}",
@@ -118,7 +115,6 @@
 			"slots": [
 				{
 					"name": "WhichGame",
-					"description": "The minigame to start",
 					"required": false,
 					"type": "MiniGame",
 					"missingQuestion": ""
@@ -127,7 +123,6 @@
 		},
 		{
 			"name": "AnswerMiniGame",
-			"description": "User answers with a minigame name",
 			"enabledByDefault": false,
 			"utterances": [
 				"{Wirf eine Münze:=>WhichGame}"
@@ -144,7 +139,6 @@
 		},
 		{
 			"name": "AnswerHeadsOrTail",
-			"description": "User answers heads or tail",
 			"enabledByDefault": false,
 			"utterances": [
 				"{Kopf:=>HeadsOrTails}",
@@ -164,7 +158,6 @@
 		},
 		{
 			"name": "AnswerRockPaperOrScissors",
-			"description": "User answers heads or tail",
 			"enabledByDefault": false,
 			"utterances": [
 				"{Stein:=>RockPaperOrScissors}",
