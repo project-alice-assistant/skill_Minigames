@@ -153,7 +153,6 @@
 			"slots": [
 				{
 					"name": "WhichGame",
-					"description": null,
 					"required": false,
 					"type": "MiniGame",
 					"missingQuestion": ""
@@ -172,7 +171,6 @@
 			"slots": [
 				{
 					"name": "HeadsOrTails",
-					"description": null,
 					"required": false,
 					"type": "HeadsOrTails",
 					"missingQuestion": ""
@@ -191,7 +189,6 @@
 			"slots": [
 				{
 					"name": "RockPaperOrScissors",
-					"description": null,
 					"required": false,
 					"type": "RockPaperOrScissors",
 					"missingQuestion": ""
