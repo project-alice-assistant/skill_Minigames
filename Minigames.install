@@ -1,6 +1,6 @@
 {
     "name": "Minigames",
-    "version": "1.0.21",
+    "version": "1.0.22",
     "icon": "fas fa-gamepad",
     "category": "game",
     "author": "Psychokiller1888",
@@ -8,7 +8,7 @@
         "maxbachmann"
     ],
     "desc": "Play a collection of many little games with Alice",
-    "aliceMinVersion": "1.0.0-a5",
+    "aliceMinVersion": "1.0.0-b3",
     "pipRequirements": [],
     "systemRequirements": [],
     "conditions": {
