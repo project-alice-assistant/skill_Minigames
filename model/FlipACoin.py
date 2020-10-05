@@ -8,7 +8,7 @@ from .MiniGame import MiniGame
 
 class FlipACoin(MiniGame):
 
-	_INTENT_ANSWER_HEADS_OR_TAIL = Intent('AnswerHeadsOrTail', isProtected=True)
+	_INTENT_ANSWER_HEADS_OR_TAIL = Intent('AnswerHeadsOrTail')
 
 	def __init__(self):
 		super().__init__()

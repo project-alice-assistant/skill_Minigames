@@ -9,8 +9,8 @@ from .MiniGame import MiniGame
 class RockPaperScissors(MiniGame):
 
 	_INTENT_PLAY_GAME = Intent('PlayGame')
-	_INTENT_ANSWER_YES_OR_NO = Intent('AnswerYesOrNo', isProtected=True)
-	_INTENT_ANSWER_ROCK_PAPER_OR_SCISSORS = Intent('AnswerRockPaperOrScissors', isProtected=True)
+	_INTENT_ANSWER_YES_OR_NO = Intent('AnswerYesOrNo')
+	_INTENT_ANSWER_ROCK_PAPER_OR_SCISSORS = Intent('AnswerRockPaperOrScissors')
 
 	def __init__(self):
 		super().__init__()

@@ -9,7 +9,7 @@ from .MiniGame import MiniGame
 class RollADice(MiniGame):
 
 	_INTENT_PLAY_GAME = Intent('PlayGame')
-	_INTENT_ANSWER_YES_OR_NO = Intent('AnswerYesOrNo', isProtected=True)
+	_INTENT_ANSWER_YES_OR_NO = Intent('AnswerYesOrNo')
 
 	def __init__(self):
 		super().__init__()

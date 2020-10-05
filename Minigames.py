@@ -13,8 +13,8 @@ class Minigames(AliceSkill):
 	"""
 
 	_INTENT_PLAY_GAME 			= Intent('PlayGame')
-	_INTENT_ANSWER_YES_OR_NO 	= Intent('AnswerYesOrNo', isProtected=True)
-	_INTENT_ANSWER_MINI_GAME 	= Intent('AnswerMiniGame', isProtected=True)
+	_INTENT_ANSWER_YES_OR_NO 	= Intent('AnswerYesOrNo')
+	_INTENT_ANSWER_MINI_GAME 	= Intent('AnswerMiniGame')
 
 	_SUPPORTED_GAMES 			= [
 		'FlipACoin',
