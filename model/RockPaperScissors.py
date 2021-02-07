@@ -38,7 +38,7 @@ class RockPaperScissors(MiniGame):
 			choices = ['rock', 'paper', 'scissors']
 			aliceChoice = random.choice(choices)
 
-			self.sound('drum_suspens', session.siteId)
+			self.sound('drum_suspens', session.deviceUid)
 
 			redQueen = SuperManager.getInstance().skillManager.getSkillInstance('RedQueen')
 			redQueen.changeRedQueenStat('happiness', 5)

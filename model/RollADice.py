@@ -23,7 +23,7 @@ class RollADice(MiniGame):
 	def start(self, session: DialogSession):
 		super().start(session)
 
-		self.sound('rollADice', session.siteId)
+		self.sound('rollADice', session.deviceUid)
 
 		redQueen = SuperManager.getInstance().skillManager.getSkillInstance('RedQueen')
 		redQueen.changeRedQueenStat('happiness', 5)

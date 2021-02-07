@@ -32,7 +32,7 @@ class FlipACoin(MiniGame):
 		if session.intentName == self._INTENT_ANSWER_HEADS_OR_TAIL:
 			coin = random.choice(['heads', 'tails'])
 
-			self.sound('coinflip', session.siteId)
+			self.sound('coinflip', session.deviceUid)
 
 			redQueen = SuperManager.getInstance().skillManager.getSkillInstance('RedQueen')
 			redQueen.changeRedQueenStat('happiness', 5)
