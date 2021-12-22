@@ -34,7 +34,7 @@ class FlipACoin(MiniGame):
 
 			self.sound('coinflip', session.deviceUid)
 
-			redQueen = SuperManager.getInstance().skillManager.getSkillInstance('RedQueen')
+			redQueen = SuperManager.getInstance().SkillManager.getSkillInstance('RedQueen')
 			redQueen.changeRedQueenStat('happiness', 5)
 
 			if session.slotValue('HeadsOrTails') == coin:

@@ -66,7 +66,7 @@ class MiniGame(ProjectAliceObject):
 
 	@staticmethod
 	def sound(filename: str, deviceUid: str):
-		SuperManager.getInstance().mqttManager.playSound(
+		SuperManager.getInstance().MqttManager.playSound(
 			soundFilename=filename,
 			location=Path(f'{SuperManager.getInstance().commons.rootDir()}/skills/Minigames/sounds'),
 			sessionId=filename,

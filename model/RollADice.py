@@ -25,12 +25,12 @@ class RollADice(MiniGame):
 
 		self.sound('rollADice', session.deviceUid)
 
-		redQueen = SuperManager.getInstance().skillManager.getSkillInstance('RedQueen')
+		redQueen = SuperManager.getInstance().SkillManager.getSkillInstance('RedQueen')
 		redQueen.changeRedQueenStat('happiness', 5)
 
-		SuperManager.getInstance().mqttManager.endDialog(
+		SuperManager.getInstance().MqttManager.endDialog(
 			sessionId=session.sessionId,
-			text=SuperManager.getInstance().talkManager.randomTalk(
+			text=SuperManager.getInstance().TalkManager.randomTalk(
 				talk='rollADiceResult',
 				skill='Minigames'
 			).format(random.randint(1, 6))
